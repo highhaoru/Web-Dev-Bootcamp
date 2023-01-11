@@ -9,20 +9,35 @@ body {
   /* gif icon：https://giphy.com/ */
 }
 
+a {
+  color: #11999E;
+}
+
 h1 {
-  margin-top: 0;
+  font-size: 5.625rem;
+  /* em == 倍数 */
+  /* 5.625em == 562.5% */
+  /* rem:root em 忽略父级 */
+  margin: 50px auto 0 auto;
   /* margin: 0 auto 0 auto; */
   /* 圆圈（顺时针）速记法 */
   /* margin: top:0 right:auto bottom:0 left:auto; == margin: top & bottom:0 right & left:auto; */
   font-family: "Sacramento", cursive;
+  color: #66BFBF;
+  line-height: 2em;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  /* 40px / 16 px == 2.5 rem */
+  color: #66BFBF;
+  font-weight: normal;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
+  color: #11999E;
 }
 
 .top-container {
@@ -44,6 +59,13 @@ h3 {
 
 }
 
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
 .pro {
   text-decoration: underline;
 }
@@ -59,3 +81,32 @@ h3 {
   right: 300px;
   top: 50px;
 }
+
+.avatar {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.mainSkill {
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.hacking {
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* .main-skill-description {
+  clear: left; */
+  /* clear: left; == anti-float: left; */
+/* }
+
+.hacking-skill-description {
+  clear: right;
+} */
